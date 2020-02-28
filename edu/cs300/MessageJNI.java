@@ -2,6 +2,7 @@ package edu.cs300;
 
 import java.util.concurrent.*;
 
+//statements only relevant on Mac; Use statements on readme instead
 //javac -h . MessageJNI.java
 //gcc -c -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/darwin system5_msg.c -o edu_cs300_MessageJNI.o
 //gcc -dynamiclib -o libsystem5msg.dylib edu_cs300_MessageJNI.o -lc
