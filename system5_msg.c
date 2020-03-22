@@ -12,6 +12,7 @@
 #include "queue_ids.h"
 
 
+#ifndef mac
 size_t                  /* O - Length of string */
 strlcpy(char       *dst,        /* O - Destination string */
         const char *src,      /* I - Source string */
@@ -40,6 +41,8 @@ strlcpy(char       *dst,        /* O - Destination string */
 
     return (srclen);
 }
+
+#endif
 
 
 JNIEXPORT jstring JNICALL Java_edu_cs300_MessageJNI_readStringMsg

@@ -7,6 +7,8 @@
 #include <errno.h>
 #include "longest_word_search.h"
 #include "queue_ids.h"
+
+#ifndef mac
 size_t                  /* O - Length of string */
 strlcpy(char       *dst,        /* O - Destination string */
         const char *src,      /* I - Source string */
@@ -35,6 +37,7 @@ strlcpy(char       *dst,        /* O - Destination string */
 
     return (srclen);
 }
+#endif
 
 int main(int argc, char**argv)
 {
